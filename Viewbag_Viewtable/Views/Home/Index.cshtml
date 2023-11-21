@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h1>
+    @ViewBag.Name
+</h1>
+<div>
+    <ul>
+        @foreach (var item in ViewBag.List)
+        {
+       <li>@item</li>
+        }
+    </ul>
+
+</div>
+<div>
+    <ul>
+        @foreach (var item in ViewBag.obj)
+        {
+            <li>Empid  -@item.Empid Empname -@item.Empname    EmpAge -@item.Empage
+        </li>
+        }
+    </ul>
+</div>

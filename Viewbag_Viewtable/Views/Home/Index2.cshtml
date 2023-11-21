@@ -1,0 +1,27 @@
+﻿
+<html>
+<head>
+    <title>Index2</title>
+</head>
+<body>
+<h1>This is a simple page</h1>
+
+    <br />
+    <br />
+    <br />
+    <div>
+
+        <h1>@ViewData["MyKey"]"</h1>
+    </div>
+    <div>
+        <ul>
+            @foreach (var item in (List<string>)ViewData["Mylist"])
+            {
+            <li>  @item</li>
+
+            }
+        </ul>
+    </div>
+
+</body>
+</html>
